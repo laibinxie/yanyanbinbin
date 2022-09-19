@@ -14,7 +14,7 @@ public class TestSchedule2 {
     @Autowired
     private ThePublicService thePublicService;
     //@Scheduled(cron = "0 30 23  * * ?")
-    @Scheduled(cron = "19 22 * * * *")
+    @Scheduled(cron = "0 33 * * * *")
     public void work() throws MyHttpException {
         thePublicService.sendMessage();
     }
